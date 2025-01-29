@@ -7,21 +7,7 @@ import MovieCard from './MovieCard';
 //c65a7b83
 
 const API_URL = "http://www.omdbapi.com?apikey=c65a7b83";
-const movie={
-  "Poster"
-: 
-"https://m.media-amazon.com/images/M/MV5BZWQxMjcwNjItZjI0ZC00ZTc4LWIwMzItM2Q0YTZhNzI3NzdlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
-"Title"
-: 
-"Italian Spiderman",
-"Type"
-: 
-"movie",
-"Year"
-: 
-"2007",
-"imdbID": "tt270"
-}
+
 
 
 
@@ -32,6 +18,7 @@ function App() {
   const searchMovies = async(title)=>{
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
+    if(!data) return ;
    setMovies(data.Search);
   }
   useEffect(()=>{
