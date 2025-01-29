@@ -7,7 +7,7 @@ import MovieCard from './MovieCard';
 //c65a7b83
 
 const API_URL = "http://www.omdbapi.com?apikey=c65a7b83";
-const movie1={
+const movie={
   "Poster"
 : 
 "https://m.media-amazon.com/images/M/MV5BZWQxMjcwNjItZjI0ZC00ZTc4LWIwMzItM2Q0YTZhNzI3NzdlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
